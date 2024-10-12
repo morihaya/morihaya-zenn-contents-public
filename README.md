@@ -26,6 +26,9 @@ npm install zenn-cli
 
 # zenn-cliをアップデート
 npm install zenn-cli@latest
+
+# zen用のディレクトリを作成
+npx zenn init
 ```
 
 ### Operations
