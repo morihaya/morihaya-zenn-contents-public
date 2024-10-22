@@ -6,7 +6,7 @@ topics: # タグを指定する
   - "NewRelic"
   - "aeon"
   - "NRQL"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
@@ -40,7 +40,7 @@ LIMIT MAX
 
 
 :::message alert
-SQLとNRQLは近い構文ですが、SQLのGROUP BY、HAVINGが完全に同じと考えるのは危険です。期待した結果を得られているかは全件結果を別の手段で抽出するなどの確認を推奨します。
+SQLとNRQLは近い構文ですが、SQLの`GROUP BY`句、`HAVING`句が完全に同じと考えるのは危険です。期待した結果を得られているかは全件結果を別の手段で抽出するなどの確認を推奨します。
 :::
 
 
