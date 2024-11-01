@@ -7,7 +7,7 @@ topics: # タグを指定する
   - "AzureDevOps"
   - "Terraform"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
@@ -18,7 +18,7 @@ publication_name: "aeonpeople"
 本記事では、TerraformでAzure DevOpsのGroupを管理しようとして認証にハマって解決した件を紹介します。
 同様の事象に悩む方は極めて少数かもしれませんが、同じハマりどころに遭遇した方の助けになれば幸いです。
 
-なお、本件の中心となって進めてくれたのは別の同僚氏で、私はモブオペで一部をヘルプした関係で執筆をしています。
+なお、本件の中心となって進めてくれたのは別の同僚氏で、私はモブワークで一部をヘルプした関係で執筆をしています。
 
 ## TL;DR
 
@@ -259,7 +259,7 @@ $ az devops security permission update --allow-bit 3 --deny-bit 32 --id hoge-fug
 
 ### ついに解決へ、グループを作成できるユーザとの権限比較
 
-その後、モブオペで別の同僚氏メンバー（私含む）で課題解決のリトライをした際に、グループを作成できるDevOpsユーザとの比較を行いました。
+その後、モブワークで別の同僚氏メンバー（私含む）で課題解決のリトライをした際に、グループを作成できるDevOpsユーザとの比較を行いました。
 
 具体的にはPermissions画面にて管理権限を持つ自分のアカウントを眺めたところ、権限の右端に情報マーク"ℹ️"があり、それにマウスオーバーをするとどこから権限を継承されているかがわかりました。
 
@@ -275,7 +275,7 @@ $ az devops security permission update --allow-bit 3 --deny-bit 32 --id hoge-fug
 ## Project Collection AdministratorsへTerraform用のService Principalユーザを追加して解決
 
 ここまでくればあとは試すのみで、Project Collection AdministratorsにTerraformで利用するService Principalユーザを追加したところ、無事に `terraform apply` が実行されました。
-この瞬間は、数多の `terraform apply` のエラーに苦しんでいたモブオペの一同で快哉をあげました。
+この瞬間は、数多の `terraform apply` のエラーに苦しんでいたモブワークの一同で快哉をあげました。
 
 ## おわりに
 
