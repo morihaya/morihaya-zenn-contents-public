@@ -28,6 +28,7 @@ publication_name: "aeonpeople"
 本記事を箇条書きでまとめると以下です。
 
 - ADOにPRやPushを行っても、HCP TerraformでRunが自動で動作しない事象が散発した
+- さらに、自動でRunが動作しないだけでなく、mainブランチの最新Commitを取得しない事象も発生した
 - 対策として、HCP TerraformのVCS TriggersのVCS branchの設定を変更することで即座にRunを実行した
 
 
