@@ -74,7 +74,7 @@ $ terraform apply
 最初に行ったのがこちらの方法です。
 上述したように通常はローカルのターミナルで`terraform apply`を行うとエラーになります。
 
-しかし、HCP TerraformのWorkspace SettingのGeneralにてローカル実行を可能に変更できます。
+しかし、HCP TerraformのWorkspace SettingのGeneralにてExecution Modeを変更してローカル実行を可能にできます。
 
 暫定回避策として一時的にLocalに変更して`terraform apply`を行いました。
 
