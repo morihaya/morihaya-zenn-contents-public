@@ -3,7 +3,7 @@ title: "HCP TerraformでVCS Triggerが動かないときに強制的にキック
 emoji: "🦵"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: # タグを指定する
-  - "HCPTerraform"
+  - "Hashicorp"
   - "AzureDevOps"
   - "Terraform"
   - "CICD"
