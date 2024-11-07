@@ -8,7 +8,7 @@ topics: # タグを指定する
   - "Terraform"
   - "CICD"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
