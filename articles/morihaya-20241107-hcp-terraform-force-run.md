@@ -52,7 +52,7 @@ publication_name: "aeonpeople"
 
 この状態でさらに困ったのが、HCP Terraform側で手動でRunを実行しても最新のCommitをHCP Terraformが取得しない状態になりました。
 
-当社は基本HCP TerraformをRemoteでの実行に限定しているため、`terraform plan`のようにローカルで実行することはできません。
+当社は基本HCP TerraformをRemoteでの実行に限定しているため、`terraform apply`をローカルで実行することはできません。
 
 具体的にはローカルのターミナルから`terraform apply`を実行すると以下のようにエラーとなります。
 
