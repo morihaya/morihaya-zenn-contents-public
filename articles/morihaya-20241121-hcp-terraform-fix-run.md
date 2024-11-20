@@ -16,11 +16,11 @@ publication_name: "aeonpeople"
 
 こんにちは。イオンスマートテクノロジー株式会社（AST）でSREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
-本記事では、以前公開した[HCP TerraformでVCS Triggerが動かないときに強制的にキックする技](https://zenn.dev/aeonpeople/articles/morihaya-20241107-hcp-terraform-force-run)で起きていた問題のアンサー記事（解決方法の紹介）になります。
+本記事は、以前公開した[HCP TerraformでVCS Triggerが動かないときに強制的にキックする技](https://zenn.dev/aeonpeople/articles/morihaya-20241107-hcp-terraform-force-run)で起きていた問題のアンサー記事（解決方法の紹介）になります。
 
 前記事で発生していた問題は「当社で利用しているVCSのひとつAzure DevOps Repos（以降はADO）と連携してCI/CDを実現するHCP Terraform（以降はHCPt）において、HCPt側がなぜかADO側の変更イベントを検知せずCI/CDが実行されない」問題でした。
 
-さらに具体的に記述すると「ADOでPullRequest（以降はPR）を作成し、そのPRに追加でCommitをPushした際、HCPtのRunが実行されない状況が頻発」していました。
+さらに具体的に記述すると「ADOでPull Request（以降はPR）を作成し、そのPRに追加でCommitをPushした際、HCPtのRunが実行されない状況が頻発」していました。
 
 前記事では暫定対策の「`VCS branch`を一時的に変更する技」を紹介しましたが、本記事では解決策をご紹介します。
 
@@ -125,7 +125,6 @@ variable "workspaces_map_info" {
 
   type = map(object({
     # Workspace Settings
-    ## NOTE: change
     name                  = optional(string, null)
     allow_destroy_plan    = optional(bool, false)
     auto_apply            = optional(bool, false)
@@ -196,7 +195,7 @@ variable "morihaya_workspaces_map_info" {
 
 ## Call module
 module "morihaya" {
-  source = "../../modules/workspace"
+  source = "hoge/piyo/modules/workspace"
 
   project_id          = tfe_project.main["morihaya"].id
   oauth_token_id      = var.ado_oauth_token_id
