@@ -32,7 +32,7 @@ publication_name: "aeonpeople"
 
 本記事を箇条書きでまとめると以下です。
 
-- ADOのPRに追加CommitをPushしても、HCPtでRunが自動で動作しない事象が発生
+- ADOのPRに追加CommitをPushしても、HCPtでRunが自動で実行されない事象が発生
 - 原因は発生するHCPtのWorkspaceの設定で`Patterns`指定をしているのに`Path`が未入力だった
 - 対策として`Path`に`Terraform Working Directory`と同等の文字列を設定して解決
 
