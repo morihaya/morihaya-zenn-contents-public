@@ -40,13 +40,13 @@ publication_name: "aeonpeople"
 ## 背景
 ＊背景はほぼ前記事の引用です。
 
-当社では[ADO](https://azure.microsoft.com/ja-jp/products/devops/)の[Repos](https://azure.microsoft.com/ja-jp/products/devops/repos/)と[HCPt](https://developer.hashicorp.com/terraform)を利用し、Azureの主要リソースやNew Relicなど、さまざまなプロダクトの管理をTerraformで管理し、VCSとしてADOを利用し、HCP TerraformでCI/CDを行なっています。
+当社では[ADO](https://azure.microsoft.com/ja-jp/products/devops/)の[Repos](https://azure.microsoft.com/ja-jp/products/devops/repos/)と[HCPt](https://developer.hashicorp.com/terraform)を利用し、Azureの主要リソースやNew Relicなど、さまざまなプロダクトの管理をTerraformで管理し、VCSとしてADOを利用し、HCPtでCI/CDを行なっています。
 
 ![雑なシーケンス図](/images/morihaya-20241107-hcp-terraform-force-run/2024-11-07-01-40-29.png)
 
 ## HCP TerraformのCIが動作しない事象
 
-ある日、いつも通りにリソースチューニングのためのTerraformコード変更のPRを作成し、CI結果を見て追加修正のcommitをPushしたところ、HCP Terraform側のCIが動作しませんでした。
+ある日、いつも通りにリソースチューニングのためのTerraformコード変更のPRを作成し、CI結果を見て追加修正のcommitをPushしたところ、HCPt側のCIが動作しませんでした。
 
 ![](/images/morihaya-20241107-hcp-terraform-force-run/2024-11-07-01-48-10.png)
 
