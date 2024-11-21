@@ -259,7 +259,10 @@ module "morihaya" {
 
 原因としては「"Patterns"を指定しながら"Path"に何も入力しない」状態と特定できましたが、一方この状態で2年近く運用できていたことを考えるとHCPt側になんらかの変更があった可能性があります。（あくまで可能性であり、サポート回答をいただいたものではなく推測になります）
 
+一例として2024-11-06 [Speed up app delivery with automated cancellation of plan-only Terraform runs](https://www.hashicorp.com/blog/speed-up-app-delivery-with-automated-cancellation-of-plan-only-terraform-runs) のようなアップデートがHCPt側でも日々行われており、何らかの影響があったかもしれません。（あくまで仮説ですが）
+
 しかし、”Path”が入力されていないのは違和感のある状態であり、今回の発見を前向きに捉え適切な値を”Path”に入力していくことにしました。
+
 
 ## 対策：Patternsを指定しPathも指定する
 
