@@ -6,7 +6,7 @@ topics: # タグを指定する
   - "NewRelic"
   - "Terraform"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
