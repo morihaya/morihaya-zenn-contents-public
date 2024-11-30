@@ -1,13 +1,13 @@
 ---
 title: "Akamaiユーザ管理をAIBS＆ASTで協力してSSO化しました（新生AST以前の話）"
-emoji: "✌️"
+emoji: "😆"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: # タグを指定する
   - "sso"
   - "entraid"
   - "Akamai"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
@@ -17,10 +17,10 @@ publication_name: "aeonpeople"
 
 本記事は[AEON Advent Calendar 2024](https://qiita.com/advent-calendar/2024/aeon)の1日目の記事です。
 
-そして記事を公開する2024/12/01は、私の所属するASTが[新生イオンスマートテクノロジー株式会社](https://www.aeon.info/news/release_90445/)として始動する記念すべき日でもあります。（営業日的には12/2からですが）
+そして記事を公開する2024/12/01は、私の所属するASTが[新生イオンスマートテクノロジー株式会社](https://www.aeon.info/news/release_90445/)として始動する記念すべき日でもあります。
 ニュースリリースにもある通り、新生ASTは従来のASTと「イオンアイビス株式会社（以下、AIBS）のIT事業を分割・統合」によって誕生します。
 
-本記事では、新生ASTとして融合する以前から、ASTとAIBSのIT部門では協力と連携が行われていた事例をご紹介します。
+本記事では新生ASTとして融合する以前から、ASTとAIBSのIT部門が協力して成果を出してきた事例のひとつを紹介します。
 
 ## TL;DR
 
@@ -35,9 +35,10 @@ publication_name: "aeonpeople"
 
 ## 背景
 
-### これまでExcel申請書をメールでやりとり
+### これまではAkamaiのユーザ作成にExcel申請書をメールでやりとり
 
 当社ではCDN/WAFの機能に[Akamai社](https://www.akamai.com/ja)のサービスを採用しています。（Azure Front Doorなどその他のCDN/WAFを活用しているシステムもあります）
+
 Microsoft365など、その他の多くのSaaS製品やプロダクトと同様にAkamaiの管理はAIBS社のIT部門にて行われてきました。
 ASTが開発・運用する各システムでは、AIBSから払い出されたCDNプロパティおよびWAF設定を利用してサービスを提供しています。
 
@@ -56,11 +57,11 @@ AkamaiにはWebブラウザから各種変更や情報にアクセスできる�
 特筆すべきは会議前にざっくりとした方針の叩き台資料が用意されており、会議後の翌日にはその修正版が議論の内容を取り込んだ形で展開されてきたことには脱帽でした。
 （なおこのありがたい流れは、同じSREチームでAIBSにも知人の多い岩崎さんの協力も大きかったことを明記します、サンキュー岩崎さん！）
 
-![](/images/morihaya-20241201-Akamai-sso-with-AIBS/2024-12-01-00-53-09.png)
+![](/images/morihaya-20241201-Akamai-sso-with-AIBS/2024-12-01-02-58-19.png)
 
 ## Akamaiユーザ管理へSSOの導入
 
-### SSOによる単純なユーザ作成までは数日で実装できた
+### SSOによる単純なユーザ認証までは数日で実装できた
 
 こうして実装を開始した私たちは、テストユーザの作成までは大きな問題なく進めることができました。
 手順はAkamai社のtechdocsより[Get started with SSO with SAML](https://techdocs.akamai.com/iam/docs/get-started)を参照しています。（参照のためにはAkamai Control Centerへログインが必要です...一般公開してほしい）
@@ -93,7 +94,7 @@ ASTが希望するAkamaiユーザについては以下のような種類の権�
 
 ### 一つのEnterprise Applicationでグループ名をマッピング
 
-ドキュメントの読み込みと切り分けを経て、結果として以下の方式でEntra IDのグループとAkamaiの権限（Role）をマッピングすることが可能となりました。
+ドキュメントの再読み込みと切り分けを経て、結果として以下の方式でEntra IDのグループとAkamaiの権限（Role）をマッピングすることが可能となりました。
 
 - Entra IDにAkamai Role別にGroupを作成
 - Entra IDにEnterprise Applicationをひとつのみ作成
@@ -115,7 +116,7 @@ SSO全般に言えることとして、どの属性を利用してIdPからSP(Se
 
 ![](/images/morihaya-20241201-Akamai-sso-with-AIBS/2024-12-01-02-19-46.png)
 
-さらにGroupについては以下の設定も行なっており大変に重要です。
+さらにGroupについては以下の設定も行なっています（大変重要）。
 
 - `Group assigned to the application`: このEnterprise ApplicationにアタッチされたグループのみをAkamaiへ送る
 - `Source attributes: Cloud-only group display names`: IDではなくグループ名をAkamaiへ渡す
@@ -152,13 +153,13 @@ SREのプラクティスのひとつに[Eliminating Toil(トイルの撲滅)](ht
 そして冒頭でも述べたように、本日2024/12/01より「イオンアイビス株式会社のIT事業を分割・統合」によって新生ASTが始動します。
 これまで以上に機動力とパワーを増していく当社に期待が高まりますし、所属するひとりとして今後が楽しみです。
 
-最後に、協力いただいたDX基盤の新川さん、検証に協力してくれたSREチームに改めて感謝をお伝えいたします！
+最後に、協力いただいたDX基盤の新川さん、検証に協力してくれたSRE岩崎さんおよび関係各位に改めて感謝をお伝えいたします！
 
 それではみなさまEnjoy Microsoft Entra ID & Akamai！
 
 ## イオングループで、一緒に働きませんか？
 
-イオングループでは、エンジニアを積極採用中です。少しでもご興味もった方は、キャリア登録やカジュアル面談登録などもしていただけると嬉しいです。
+イオングループでは、エンジニアを積極採用中です。少しでもご興味をもった方は、キャリア登録やカジュアル面談登録などもしていただけると嬉しいです。
 皆さまとお話できるのを楽しみにしています！
 
 [![](https://storage.googleapis.com/techhire-prd-assets/AEON/ATH_engineer_Zenn%E3%83%8F%E3%82%99%E3%83%8A%E3%83%BC.png)](https://engineer-recuruiting.aeon.info/)
