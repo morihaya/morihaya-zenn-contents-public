@@ -136,13 +136,6 @@ New RelicもPagerDutyも成熟した素晴らしいSaaSです。当社ではそ�
 
 それではみなさまNew Relic & PagerDuty！
 
-## AEON Advent Calendar 2024
-
-次の[AEON Advent Calendar 2024](https://qiita.com/advent-calendar/2024/aeon)の2日目の記事は、
-イオンリテール（株）デジタル戦略部データソリューションGの丸尾さんの[知って得するGoogle CloudCLI(SDK)の導入、ローカルPCとクラウドをつなぐ方法](https://qiita.com/bleachonn77/items/8beb3bad335be39bb7bf)です。
-
-ASTはAzureがほぼメインですが、Google Cloudをイオンリテールでは利用されていてグループの多様性さを感じます...!
-
 ## イオングループで、一緒に働きませんか？
 
 イオングループでは、エンジニアを積極採用中です。少しでもご興味をもった方は、キャリア登録やカジュアル面談登録などもしていただけると嬉しいです。
