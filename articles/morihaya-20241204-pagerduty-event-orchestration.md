@@ -130,7 +130,7 @@ PagerDutyの[Event Orchestration](https://support.pagerduty.com/main/lang-ja/doc
 
 以上が「PagerDutyのService Event OrchestrationでIncident名を日本語でわかりやすくする方法」の紹介でした。
 New RelicもPagerDutyも成熟した素晴らしいSaaSです。当社ではそれらを活用し学びながら良いサービス提供につなげるべく改善の取り組みを行っています。
-本記事で取り上げた`Event Orchestration`についてもより多くの機能を有しており、また別の機会に紹介できればと考えています。
+本記事で取り上げた`Event Orchestration`も、Incidentタイトルを書き換える以外にも大変多くの機能を有しており、また別の機会に紹介できればと考えています。
 
 最後に、見事に実装をやり遂げた黒木さんに改めて感謝をお伝えいたします！
 
