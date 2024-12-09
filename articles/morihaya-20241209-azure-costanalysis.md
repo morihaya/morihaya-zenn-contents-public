@@ -39,7 +39,7 @@ https://jazug.connpass.com/event/307679/
 
 ### 日々の業務でもちょいちょいCost analysisを使う
 
-私個人としても”負荷試験用の環境構築・運用”や、推進中の”Azure Database for MySQLのIOPSモード変更”などの案件の中でCost analysisを利用する場面があり、自分の中に「Cost analysisを利用する際の'型'」とでも呼ぶ利用方法が身についてきたのです。
+私個人としても”負荷試験用の環境構築・運用”や、推進中の”Azure Database for MySQLのIOPSモード変更”などの案件の中でCost analysisを利用する場面があり、自分の中に「Cost analysisを利用する際の'型'」とでも呼ぶ利用方法が身についてきました。
 
 ＊このブログを書きながらドキュメントにも目を通したところ、大体のことは以下に記載されていましたので、ぜひ公式にも目を通してください。
 https://learn.microsoft.com/ja-jp/azure/cost-management-billing/costs/customize-cost-analysis-views
@@ -174,7 +174,7 @@ Daily costsはその名の通り1日あたりのコストを棒グラフで表�
 
 #### 4のフィルタは以下のようにもできるが残しておくと便利かも
 
-4のフィルタ条件は以下のようにResourceのみでも同じ結果となります。
+4のフィルタ条件は以下のようにSubscriptionやService nameを外し、Resourceのみ指定でも同じ結果となります。
 
 - フィルタ
   - Resource: 作業対象のMySQLのインスタンス
