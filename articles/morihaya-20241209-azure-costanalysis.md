@@ -15,7 +15,11 @@ publication_name: "aeonpeople"
 
 こんにちは。イオンスマートテクノロジー株式会社（AST）でSREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
-こちらは[Microsoft Azure Advent Calendar 2024](https://qiita.com/advent-calendar/2024/azure)の9日目の記事です。
+こちらは以下のアベンドカレンダーに参加しています、わいわい。
+
+- [Microsoft Azure Advent Calendar 2024](https://qiita.com/advent-calendar/2024/azure)の9日目
+- [AEON Advent Calendar 2024](https://qiita.com/advent-calendar/2024/aeon)のシリーズ2の9日目
+
 
 本記事では私がよく使う[Microsoft Cost Management](https://azure.microsoft.com/ja-jp/products/cost-management/)の機能のひとつ[Cost analysis(日本語では”コスト分析”)](https://learn.microsoft.com/ja-jp/azure/cost-management-billing/costs/cost-analysis-common-uses)の利用方法をいくつか紹介します。
 
