@@ -7,7 +7,7 @@ topics: # タグを指定する
   - "コスト最適化"
   - "コスト削減"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
