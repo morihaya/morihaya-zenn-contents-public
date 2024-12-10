@@ -1,6 +1,6 @@
 ---
 title: "イベントレポート！レバテック×イオン ~事業会社を支える開発組織のBizDevOps戦略~を開催しました"
-emoji: "😆"
+emoji: "🍕"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: # タグを指定する
   - "イベントレポート"
