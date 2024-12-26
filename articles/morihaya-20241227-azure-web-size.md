@@ -1,6 +1,6 @@
 ---
 title: "目grepしやすいAzure Web Portalはフォントサイズとウィンドウサイズから"
-emoji: "💰"
+emoji: "😳"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: # タグを指定する
   - "azure"
