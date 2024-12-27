@@ -120,7 +120,7 @@ Microsoft Copilot in Azureは「画面サイズの変更」とだけ教えてく
 ## おわりに
 
 以上が「目grepしやすいAzure Web Portalはフォントサイズとウィンドウサイズから」の紹介でした。
-最近買った[CleanShot X for Mac](https://cleanshot.com/)の"Screen Recoading"機能が便利＆楽しいためgif動画を多めに利用してみました。
+最近買った[CleanShot X for Mac](https://cleanshot.com/)の"Record Screen"機能が便利＆楽しいためgif動画を多めに利用してみました。
 
 ### 2024年の年の瀬ですね
 
