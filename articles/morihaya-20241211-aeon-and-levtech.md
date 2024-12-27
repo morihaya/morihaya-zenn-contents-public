@@ -8,7 +8,7 @@ topics: # タグを指定する
   - "bizdevops"
   - "sso"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
