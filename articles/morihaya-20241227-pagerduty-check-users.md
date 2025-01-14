@@ -15,7 +15,7 @@ publication_name: "aeonpeople"
 
 こんにちは。イオンスマートテクノロジー株式会社（AST）でSREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
-やっとお正月気分も抜けてきましたので、2025年もやっていきです。
+2025年も楽しんでやっていきです。
 本記事ではPagerDutyの棚卸しを簡単なPythonスクリプトとExcelを使って行なった話をします。
 
 ## TL;DR
