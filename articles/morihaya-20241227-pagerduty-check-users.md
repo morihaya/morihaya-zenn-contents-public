@@ -187,7 +187,7 @@ SECRET_API_KEY = hogefugapiyo
 
 ## 余談：List audit records for a userで最終Audit log時間の取得
 
-上記のPythonスクリプトでやりかけたことに[List audit records for a user](https://developer.pagerduty.com/api-reference/57cabfee791be-list-audit-records-for-a-user)による、各ユーザの最終のAuditログの時間付与があります。
+上記のPythonスクリプトでやりかけたことに[List audit records for a user](https://developer.pagerduty.com/api-reference/57cabfee791be-list-audit-records-for-a-user)による、各ユーザの最終のAuditログの時間取得があります。
 
 ただし、それを実装してしまうとユーザごとにAPIの呼び出しが発生してしまい、今後利用者が増えることでRate limitである `960 requests per minute` に抵触する懸念があったため辞めました。
 
