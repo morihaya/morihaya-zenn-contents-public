@@ -7,7 +7,7 @@ topics: # タグを指定する
   - "python"
   - "excel"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
