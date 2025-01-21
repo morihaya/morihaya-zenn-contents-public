@@ -7,7 +7,7 @@ topics: # タグを指定する
   - "azureportal"
   - "aeon"
   - "イベントレポート"
-published: false # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
+published: true # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
 
@@ -84,7 +84,8 @@ https://learn.microsoft.com/ja-jp/azure/aks/intro-aks-automatic
 
 https://learn.microsoft.com/ja-jp/azure/azure-local/overview
 
-生きニキ さんのセッションは勢いがあり当日一番笑いを起こしてくれていて、もっとも印象的なトークが「前日から徹夜で検証して動く環境を持ってこようとしましたが、結局動かなかったため”ただの徹夜したやつ”としてここにきています」のくだりには爆笑が起こりました。あれはお見事でした。
+生きニキ さんのセッションは勢いがあり当日一番笑いを起こしてくれていて、もっとも印象的なトークが「前日から徹夜で検証して動く環境を持ってこようとしましたが、結局動かなかったため”ただの徹夜したやつ”しか持ってこれませんでした...」のくだりには爆笑が起こりました。あれはお見事でした。
+"USBを刺せばAzureがローカルでさくっと動く"世界観はまだ先のようです。
 
 笑いの一方でAzure Localの魅力もしっかりと伝えてくれており、とくにAKS on Azure Localによるコストの比較などは興味深かったです。
 
