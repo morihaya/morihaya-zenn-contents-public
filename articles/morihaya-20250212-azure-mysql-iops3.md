@@ -135,7 +135,7 @@ IOPSの変更は影響範囲の少ないものから2回に分けて行ってる
 一度Auto scale IOPSにしたが、Pre-provisioned IOPSに戻したケースもご紹介します。
 理由は”むしろコストが上がってしまった”ためです。
 
-[過去記事]((https://zenn.dev/aeonpeople/articles/a1cee204ce9529))の通り、設定変更後のコスト効果予測ついては直近30日間のIO Countを用いて試算しています。
+[過去記事]((https://zenn.dev/aeonpeople/articles/a1cee204ce9529))の通り、設定変更後のコスト効果予測は直近30日間のIO Countを用いて試算しています。
 以下は、プロダクト側でDBの稼働状況が変化したことで、予想よりも大量のIOが発生した結果むしろコストが高くなってしまい、Pre-provisioned IOPSへ戻す判断をしたDBのコストグラフです。
 
 ![高くなったので戻した](/images/morihaya-20250212-azure-mysql-iops3/2025-02-12-09-57-36.png)
