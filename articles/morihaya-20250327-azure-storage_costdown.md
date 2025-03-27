@@ -8,7 +8,7 @@ topics:
   - "azurestorage"
   - "コスト最適化"
   - "aeon"
-published: false # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
+published: true # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
 
@@ -22,7 +22,7 @@ publication_name: "aeonpeople"
 
 - [Azure異常コストアラート：犯人はResource groupの中にいる！](https://zenn.dev/aeonpeople/articles/fafb830ab8b341)
 - [よく使うAzureのCost analysisはDaily costsとフィルタとグループ化の組み合わせ](https://zenn.dev/aeonpeople/articles/morihaya-20241209-azure-costanalysis)
-- [Azure Database for MySQLのIOPS設定の変更で月額約100万円のコストダウンが実現しました](https://zenn.dev/aeonpeople/articles/morihaya-20250327-azure-mysql-iops3)
+- [Azure Database for MySQLのIOPS設定の変更で月額約100万円のコストダウンが実現しました](https://zenn.dev/aeonpeople/articles/morihaya-20250212-azure-mysql-iops3)
 
 ## TL;DR
 
