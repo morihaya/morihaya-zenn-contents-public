@@ -8,7 +8,7 @@ topics:
   - "インシデント"
   - "オンコール運用"
   - "aeon"
-published: false # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
+published: true # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
 
