@@ -145,7 +145,18 @@ Slack上でメンションを行うためにはSlackユーザIDが必要です�
 
 上述の通り紐づけるためのキーは`Email Address`です。
 
-[![](https://mermaid.ink/img/pako:eNqNUU1Lw0AQ_SthTgqxbBOTtLmJehARCuJFArJ01zS0TcomAWtbMC2ioIKIHvSigl8giIh4UfDHLFr7L9xNrEhFcC67--bNm7czLSgHhIINlM142GW47viKiBJ2BRJHzaWQslBpZaiMMGKe7yqxwFc8opTmFQe-2Ty5470r3nvh3ae5GQd-ldE69mormBBGw1BUDjZO-qeX_cMbnlx_XGy9H92nEudSonfLuwf94-fB7oPI8mSPd3eGkp3sWKzhcvUvi6FMfntMqUL8X7beXjcHZ9uia54nF9JR8jrSeWRA7fbERLv9048tZPqP-zy5FM6VsVnZQZnKOoxLMVChTpmAiRh_6t6BqELr1AFZSzCrSlpH8HAcBYtNvwx2xGKqQtwgOKJfCwN7FddCgVLiRQFbyPaZrlWFBvbBbsEa2Hmk5fIFpOmWrhVMZCJDhSbYujWZQxqaRPmCaRi6ZnVUWA8CoYpyRtGwkFnUi2bR0kzDVIEFsVsZuhDayykze7pM_iS7M-oTyqaD2I_ANozOJypb4R0?type=png)](https://mermaid.live/edit#pako:eNqNUU1Lw0AQ_SthTgqxbBOTtLmJehARCuJFArJ01zS0TcomAWtbMC2ioIKIHvSigl8giIh4UfDHLFr7L9xNrEhFcC67--bNm7czLSgHhIINlM142GW47viKiBJ2BRJHzaWQslBpZaiMMGKe7yqxwFc8opTmFQe-2Ty5470r3nvh3ae5GQd-ldE69mormBBGw1BUDjZO-qeX_cMbnlx_XGy9H92nEudSonfLuwf94-fB7oPI8mSPd3eGkp3sWKzhcvUvi6FMfntMqUL8X7beXjcHZ9uia54nF9JR8jrSeWRA7fbERLv9048tZPqP-zy5FM6VsVnZQZnKOoxLMVChTpmAiRh_6t6BqELr1AFZSzCrSlpH8HAcBYtNvwx2xGKqQtwgOKJfCwN7FddCgVLiRQFbyPaZrlWFBvbBbsEa2Hmk5fIFpOmWrhVMZCJDhSbYujWZQxqaRPmCaRi6ZnVUWA8CoYpyRtGwkFnUi2bR0kzDVIEFsVsZuhDayykze7pM_iS7M-oTyqaD2I_ANozOJypb4R0)
+```mermaid
+erDiagram
+    PagerDutyUsers {
+        string user_id PK "PagerDutyのユーザID"
+        string email_address "通知用で複数のメールを登録できる"
+    }
+    SlackUsers {
+        string slack_id PK "SlackのID"
+        string email_address "必須で1つのみ"
+    }
+    PagerDutyUsers ||--|| SlackUsers : "紐づき (Email Address)"
+```
 
 メールアドレスでの紐付けをどのように行ったかの説明は、細かい話になるためトグルに隠しておきました。気になる方は開いてください。
 
