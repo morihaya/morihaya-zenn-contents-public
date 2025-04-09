@@ -8,7 +8,7 @@ topics:
   - "slack"
   - "オンコール運用"
   - "aeon"
-published: false # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
+published: true # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
 
@@ -17,6 +17,8 @@ publication_name: "aeonpeople"
 こんにちは。イオンスマートテクノロジー株式会社（AST）でSREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
 本記事では、PagerDutyのスケジュール機能とSlackを活用して、毎朝のチームMTG担当者通知を自動化した事例を紹介します。これにより、朝会の開始時に誰が司会をするかの担当者の混乱が解消され、休暇などの不在時に簡単に司会を交代できるようになりました。
+
+![概要図](/images/morihaya-20250407-pagerduty-schedule-slack/2025-04-09-15-23-33.png)
 
 ## TL;DR
 
