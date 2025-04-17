@@ -4,6 +4,7 @@ emoji: "☀️"
 type: "tech"
 topics:
   - "pagerduty"
+  - "イベントレポート"
   - "インシデント"
   - "オンコール運用"
   - "aeon"
