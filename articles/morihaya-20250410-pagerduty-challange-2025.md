@@ -8,7 +8,7 @@ topics:
   - "インシデント"
   - "オンコール運用"
   - "aeon"
-published: false # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
+published: true # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
 
@@ -77,6 +77,10 @@ https://www.pagerduty.co.jp/topics/6231/
 とくに”Agentic Scheduler”は、前日夜間の対応を行ったなどの稼働状況を考慮してオンコールを交代する「優しさのOverride」をAIが行ってくれるとのことで、日々のオンコールの辛さを緩和する素晴らしい機能に見えました。
 
 ## いよいよPagerDuty Challenge Cupが開始！！
+
+いよいよ競技の開始です。最初に競技会場の風景写真を出したかったのですが、自分たちは準備に余裕がなくて写真がなかったため、 @Typhon666_death さんのナイスPostを引用します。（私たちのチームもバッチリ写っています）
+
+https://x.com/Typhon666_death/status/1910220800889856160
 
 ### 冒頭の10分くらいは説明と準備と役割決め
 
