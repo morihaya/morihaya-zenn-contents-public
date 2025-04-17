@@ -1,6 +1,6 @@
 ---
 title: "PagerDuty Challenge Cup参戦記：虎ノ門で学んだ“究極のインシデント対応”体験レポート"
-emoji: "☀️"
+emoji: "👺"
 type: "tech"
 topics:
   - "pagerduty"
