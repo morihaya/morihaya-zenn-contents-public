@@ -8,7 +8,7 @@ topics:
   - "forms"
   - "microsoftforms"
   - "aeon"
-published: false # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
+published: true # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
 
@@ -177,7 +177,7 @@ Google Formsでもこの機能はありますが、ドロップダウンリス�
 M365のエコシステムとして、Microsoft Formsの結果はExcelへ連携が可能です。
 Google FormsでもGoogle Sheetsへ連携が可能ですが、表計算ツールとしてはExcelに一日の長があると言えそうです。
 
-### Power Automatesとの連携も容易
+### Power Automateとの連携も容易
 
 Excelと同じくM365のエコシステムに、ローコードやノーコードでワークフローを組めるPower Automateがあります。
 別記事で紹介予定ですが「ユーザの入力した値を使った各種自動処理」の”入力画面”をMicrosoft Formsが担ってくれるため、認証も画面も自分たちで用意する必要がありません。
