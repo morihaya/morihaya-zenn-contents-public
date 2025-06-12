@@ -651,7 +651,7 @@ for repo_name in repo_names:
 CODEOWNERSファイルを配置できた今後の展開としては以下を考えています。
 
 - 配置したCODEOWNERSファイルを利用したより迅速なレビューサイクルの改善
-- 作成したスクリプト他ユースケースへの活用
+- 作成したスクリプトの他ユースケースへの活用
 - GitHub Copilot Coding Agentの便利さの社内展開
 
 ## おわりに
