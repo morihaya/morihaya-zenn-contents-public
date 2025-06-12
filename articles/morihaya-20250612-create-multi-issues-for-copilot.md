@@ -353,7 +353,7 @@ mutation {
 }
 ```
 
-Issue番号もリポジトリ内の番号ではなくglobal IDと呼ばれるものが必要で、以下のようにIssue番号を用いて取得します。
+Issue番号もリポジトリ内の番号ではなくGlobal IDと呼ばれるものが必要で、以下のようにIssue番号を用いて取得します。
 
 ```sql
 query {
