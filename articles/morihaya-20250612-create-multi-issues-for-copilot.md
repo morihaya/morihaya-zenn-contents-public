@@ -7,7 +7,7 @@ topics:
   - githubcopilot
   - python
   - aeon
-published: false # false OR true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
+published: true # false OR true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
 
