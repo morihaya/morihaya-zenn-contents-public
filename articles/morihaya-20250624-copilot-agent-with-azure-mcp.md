@@ -1,5 +1,5 @@
 ---
-title: "GitHub Copilot Coding AgentのAzure MCP server設定のハマりからGitHub Docs修正まで"
+title: "GitHub Copilot Coding agentのAzure MCP server設定のハマりからGitHub Docs修正まで"
 emoji: "📝"
 type: "tech" # tech or idea
 topics:
@@ -17,7 +17,7 @@ publication_name: "aeonpeople"
 こんにちは。イオンスマートテクノロジー株式会社（AST）でSREチームの林aka[もりはや](https://twitter.com/morihaya55)です。
 当社は各種サービスのプログラムソースコードをVCSで管理しており、GitHubもそのひとつです。（他にAzure DevOps Reposも）
 
-本記事ではGitHubのAIサービス[GitHub Copilot Coding Agent](https://docs.github.com/en/copilot/using-github-copilot/coding-agent)で[Azure MCP server](https://github.com/Azure/azure-mcp)を設定しようとしたところ、いくつかのハマりポイントがあったので紹介します。
+本記事ではGitHubのAIサービス[GitHub Copilot Coding agent](https://docs.github.com/en/copilot/using-github-copilot/coding-agent)で[Azure MCP server](https://github.com/Azure/azure-mcp)を設定しようとしたところ、いくつかのハマりポイントがあったので紹介します。
 
 最終的にはGitHub Docsへも修正PRを取り込んでもらいましたので、現在はハマることはないはずです。
 
@@ -31,10 +31,10 @@ https://docs.github.com/en/copilot/using-github-copilot/coding-agent/extending-c
 - 簡単に終わる作業と思いきや、いくつかのハマりポイントがありました...
 - トライアンドエラーの末無事に設定が完了し、GitHub Docsへ修正PRを出して取り込んでもらいました
 
-## Coding AgentへAzure MCP serverを設定するモチベーション
+## Coding agentへAzure MCP serverを設定するモチベーション
 
-Coding Agentは私たちを支援してくれる強力なサービスです。GitHubにIssueを作成し、Copilotをアサインすると数分後にはPRとして作業の結果が上がってきます。
-2025年5月の[Coding Agentの発表](https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/)を受けて、私たちもCopilotライセンスの整理とEnterpriseへの変更を行い、検証を進めてきました。
+Coding agentは私たちを支援してくれる強力なサービスです。GitHubにIssueを作成し、Copilotをアサインすると数分後にはPRとして作業の結果が上がってきます。
+2025年5月の[Coding agentの発表](https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/)を受けて、私たちもCopilotライセンスの整理とEnterpriseへの変更を行い、検証を進めてきました。
 
 先日の以下の記事もその一例です。
 
@@ -46,7 +46,7 @@ https://zenn.dev/aeonpeople/articles/morihaya-20250612-create-multi-issues-for-c
 
 ## 作業の概要
 
-Coding AgentへAzure MCP serverを設定する作業は、本来は簡単なものに見えました。
+Coding agentへAzure MCP serverを設定する作業は、本来は簡単なものに見えました。
 
 https://docs.github.com/en/copilot/using-github-copilot/coding-agent/extending-copilot-coding-agent-with-mcp#example-azure
 
@@ -300,14 +300,14 @@ GitHubの公式ドキュメントは世界中に利用者がいる巨大なリ�
 
 ## おわりに
 
-以上が「GitHub Copilot Coding AgentのAzure MCP server設定のハマりからGitHub Docs修正まで」の記事でした。
+以上が「GitHub Copilot Coding agentのAzure MCP server設定のハマりからGitHub Docs修正まで」の記事でした。
 
-私たちの日常的なタスクにおいて、まだまだGitHub Copilot Coding Agentの活用範囲は限定的です。
+私たちの日常的なタスクにおいて、まだまだGitHub Copilot Coding agentの活用範囲は限定的です。
 モデル自体の進化、MCPでの外部情報の参照、そして私たち利用する人間の練度を上げながら組織やプロダクト、そしてお客様に価値を届けていければと考えています。
 
 そして、もしみなさんもドキュメントの不備や改善点に気づいた際は、ぜひOSSの思想にのっとって一緒に貢献していきましょう！
 
-それではみなさま Enjoy GitHub Copilot Coding Agent with MCP servers!!
+それではみなさま Enjoy GitHub Copilot Coding agent with MCP servers!!
 
 ## イオングループで、一緒に働きませんか？
 
