@@ -5,6 +5,8 @@ type: "tech" # tech or idea
 topics:
   - github
   - githubcopilot
+  - azure
+  - mcp
   - aeon
 published: false # false OR true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
