@@ -17,6 +17,10 @@ publication_name: "aeonpeople"
 
 本記事ではSREのような横断的なチームが、タスクフォーマットがそれぞれ異なる複数プロジェクトを跨ぎながら先月の振り返りを行う上で、[Jira Filter](https://support.atlassian.com/ja/jira-work-management/docs/save-your-search-as-a-filter/)によるカスタムで振り返りを促進する方法を解説します。
 
+
+(2025-07-07)
+過去に自分がアサインされたチケットも表示するために`assignee was currentUser()`をクエリに追加しました。
+
 ## TL;DR
 
 本記事を3行に要約すると以下です。
@@ -29,7 +33,7 @@ publication_name: "aeonpeople"
 なお利用しているのは以下のJQLです。
 
 ```sql
-(project = "Project_A" OR project = "Project_B" OR project = "Project_C") AND (status = Done OR resolution = Done) AND ((updated >= startOfMonth(-1) AND updated <= endOfMonth(-1)) OR (resolutiondate >= startOfMonth(-1) AND resolutiondate <= endOfMonth(-1))) And assignee = currentUser()
+(project = "Project_A" OR project = "Project_B" OR project = "Project_C") AND (status = Done OR resolution = Done) AND ((updated >= startOfMonth(-1) AND updated <= endOfMonth(-1)) OR (resolutiondate >= startOfMonth(-1) AND resolutiondate <= endOfMonth(-1))) AND (assignee = currentUser() OR assignee was currentUser())
 ```
 
 ## SREの振り返りあるあるとJiraの活用
@@ -102,8 +106,10 @@ AND ((updated >= startOfMonth(-1) AND updated <= endOfMonth(-1)) OR (resolutiond
 
 4. 自分がアサインされているタスクに限定する
 
+(2025-07-07更新)作業対応後、チケットを`完了確認`といった状態で依頼元に返却するために担当を変えてしまうケースに対応するため`assignee was currentUser()`も指定しています。
+
 ```sql
-AND assignee = currentUser()
+AND (assignee = currentUser() OR assignee was currentUser())
 ```
 
 このJQLのポイントは、`startOfMonth(-1)` と `endOfMonth(-1)` という関数を使って、常に「先月」を指定できる点です。実行日付に合わせて自動的に対象期間が変わるので、毎月クエリを書き換える必要がありません。
