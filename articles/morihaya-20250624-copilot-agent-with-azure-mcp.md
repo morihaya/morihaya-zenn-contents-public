@@ -199,10 +199,13 @@ jobs:
 
 こちらも手順としては簡単で、サンプルのAzure MCP serverのJSONを、`Coding agent`の`MCP configuration`へ貼り付けるだけのはずでしたが、簡単には通りませんでした。
 
+(2025-07-21 `"type": "local",` を追記。リモートMCP対応によって`type`が追加されたため
+)
 ```json
 {
   "mcpServers": {
     "Azure": {
+      "type": "local",
       "command": "npx",
       "args": [
         "-y",
