@@ -1,6 +1,6 @@
 ---
 title: "SRE NEXT 2025レポート、LT登壇と胸アツなセッション紹介〜お野菜を添えて〜"
-emoji: "🍊"
+emoji: "🍉"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: # タグを指定する
   - "sre"
