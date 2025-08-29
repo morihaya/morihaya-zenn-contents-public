@@ -64,7 +64,7 @@ https://www.youtube.com/watch?v=AzUWq5-n7yk
 
 今回の会議でも通訳として参加いただきましたが、「Interpreter Agent」機能を検証がてら利用したい旨を会議開始時にお伝えし、機能を有効な状態で会議を参加しました。実際に有効にするには以下の図のようにTeamsのメニューから行います。
 
-![](/images/morihaya-20250828-msteams-Interpreter/2025-08-29-04-51-35.png)
+![](/images/morihaya-20250828-msteams-interpreter/2025-08-29-04-51-35.png)
 
 会議の参加メンバーと言語を図示したものが以下になります。
 
@@ -89,7 +89,7 @@ https://support.microsoft.com/ja-jp/office/microsoft-teams%E4%BC%9A%E8%AD%B0%E3%
 
 Interpreter Agentを有効にし、翻訳先の言語を日本語に指定して会議を進めた私は衝撃を受けることになります。
 
-![](/images/morihaya-20250828-msteams-Interpreter/2025-08-29-03-41-12.png)
+![](/images/morihaya-20250828-msteams-interpreter/2025-08-29-03-41-12.png)
 
 図のように、中国語のメンバーがディスカッションを行っているにもかかわらず、私は一切の中国語を聞くことはなくなりました。
 その代わりに5秒程度のタイムラグを経て、彼らの声とわかる声質でほどほど流暢な日本語が流れてきました。
@@ -98,7 +98,7 @@ Interpreter Agentを有効にし、翻訳先の言語を日本語に指定して
 
 時にユーモアのある翻訳に苦笑しつつも、中国メンバー同士の会話のコンテキスト理解度が上がり、現在何について彼らが会話しているかを少なからず理解することができました。
 
-![](/images/morihaya-20250828-msteams-Interpreter/2025-08-29-04-38-02.png)
+![](/images/morihaya-20250828-msteams-interpreter/2025-08-29-04-38-02.png)
 
 この時の会議は中断や作業などもあり長時間に渡りましたが、従来に比べて圧倒的に疲労感が少ないことに気づきました。その理由は以下によるものです。
 
