@@ -6,7 +6,7 @@ topics: # タグを指定する
   - "sre"
   - "イベントレポート"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
