@@ -1,7 +1,7 @@
 ---
 title: "HashiCorp Vaultユーザ会（第1回）の開催レポート！"
 emoji: "🔑"
-type: "idea"
+type: "tech"
 topics:
   - "vault"
   - "zennfes2025infra"
