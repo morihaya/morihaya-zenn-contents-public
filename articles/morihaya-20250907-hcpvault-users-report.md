@@ -4,7 +4,7 @@ emoji: "🔑"
 type: "idea"
 topics:
   - "vault"
-  - "hcpvault"
+  - "zennfes2025infra"
   - "hashicorp"
   - "イベントレポート"
   - "aeon"
