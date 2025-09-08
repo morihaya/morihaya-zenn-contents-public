@@ -8,7 +8,7 @@ topics:
   - "hashicorp"
   - "イベントレポート"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
