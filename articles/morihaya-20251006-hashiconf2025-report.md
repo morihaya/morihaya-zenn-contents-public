@@ -1,6 +1,6 @@
 ---
 title: "HashiConf 2025 at San Francisco参加レポート"
-emoji: "🔑"
+emoji: "🥢"
 type: "tech"
 topics:
   - "hashicorp"
