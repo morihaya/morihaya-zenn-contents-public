@@ -6,7 +6,7 @@ topics:
   - "powerautomate"
   - "teams"
   - "excel"
-  - "automation"
+  - "#zennfes2025infra"
   - "microsoft365"
 published: false
 publication_name: "aeonpeople"
@@ -195,7 +195,7 @@ Compose:
 ### 今後の改善案
 
 1. **Graph APIの活用**
-   - Microsoft Graph APIを使用すれば、メンバー削除も可能に、なるのか？（情報を求めます）
+   - Microsoft Graph APIを使用すれば、メンバー削除も可能に、なるのか？（情報を求めています）
 
 2. **差分チェック機能**
    - 現在のTeamsメンバーリストとExcelの差分を取得
