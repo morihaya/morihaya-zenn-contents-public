@@ -6,9 +6,9 @@ topics:
   - "powerautomate"
   - "teams"
   - "excel"
-  - "#zennfes2025infra"
+  - "zennfes2025infra"
   - "microsoft365"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
