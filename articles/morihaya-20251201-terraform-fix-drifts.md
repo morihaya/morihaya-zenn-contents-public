@@ -97,6 +97,17 @@ Saved Viewsの作成は簡単で、保存したい表示状態で右上の「Act
 
 このようにSaved Viewsはチームで共有できるViewを作成することもできるので、「SREチームで監視すべきWorkspace一覧」のような形で運用に組み込めるのがポイントです。
 
+### Explorerを利用できるHCPの権限に注意
+
+(2025-12-03追記)コメントでrakiさんから指摘いただいた通り、Explorerの検索結果は誰もが見えるわけではありません。公式ドキュメントの[Permissions](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/explorer#permissions)には以下の記載があり、オーガニゼーションオーナーまたは、すべてのワークスペースが参照できるかそれ以上の権限を推奨とあります。
+
+> The explorer for workspace visibility requires access to a broad range of an organization's data. To use the explorer, you must have either of the following organization permissions:
+
+> - Organization owner
+> - View all workspaces or greater
+
+権限が足りない場合はそのユーザが参照可能なワークスペースしか表示されないといった結果になりますので注意してください。
+
 ## 割れ窓理論とは
 
 ブログのタイトルに「割れ窓対応」と書いたので、簡単に「割れ窓理論」についても記載します。
