@@ -6,7 +6,7 @@ topics:
   - "copilot"
   - "microsoft365"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
