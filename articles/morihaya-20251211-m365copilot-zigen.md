@@ -136,7 +136,7 @@ M365 Copilotの社内ファイルを含めた横断検索は、たまにしか�
 
 ぜひカスタム指示を利用して自分だけのM365 Copilotを活用してはいかがでしょうか。
 
-それではみなさま、Enjoy Microsft 365 Copilot!
+それではみなさま、Enjoy Microsoft 365 Copilot!
 
 ## イオングループで、一緒に働きませんか？
 
