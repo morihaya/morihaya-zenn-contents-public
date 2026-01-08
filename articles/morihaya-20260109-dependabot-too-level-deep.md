@@ -20,23 +20,23 @@ publication_name: "aeonpeople"
 ## TL;DR
 
 - 当社はGHAS導入をはじめリポジトリへのセキュリティ強化を推進しており、Dependabotの導入もそのひとつ
-- 主にSREチームが管理する巨大なTerraformリポジトリにTerraform向け定義でdependabot.ymlを配置したが `stack level too deep` エラーが発生
+- 主にSREチームが管理する巨大なTerraformリポジトリにTerraform向け定義で`dependabot.yml`を配置したが `stack level too deep` エラーが発生
 - 原因は `main.tf` ファイル内のコメント部に記載された使用例（Usage）の`source =`の記述だった
 
 ## 背景
 
 当社はセキュリティの向上のためGitHub Advanced Security(GHAS)を導入・展開しています。その一環でDependabot自体もちゃんと利用するよう見直す動きをしていました。
 
-私たちSREチームが管理するリポジトリに対してdependabot.ymlの配置を進めており、もっとも巨大でよく使うTerraformのリポジトリでその問題が発生しました。
+私たちSREチームが管理するリポジトリに対して`dependabot.yml`の配置を進めており、もっとも巨大でよく使うTerraformのリポジトリでその問題が発生しました。
 
 ## ハマり1: directory: "/" 指定ではtfファイルを見つけてくれない
 
 最初に遭遇したのは `Dependabot couldn't find any dependency files in the directory` のエラーです。
 
 当初私はこのタスクがすぐに終わるものと予想していました。
-いつものようにGitHub Copilotに対して「このリポジトリ向けのdependabot.ymlを作成してください。」とお願いすれば終わるものと考えていたのです。
+いつものようにGitHub Copilotに対して「このリポジトリ向けの`dependabot.yml`を作成してください。」とお願いすれば終わるものと考えていたのです。
 
-そうして当初Copilotが生成したのは以下のdependabot.ymlでした。
+そうして当初Copilotが生成したのは以下の`dependabot.yml`でした。
 
 ```yml
 # /.github/dependabot.yml
@@ -136,7 +136,7 @@ updates:
 https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference?learn=dependency_version_updates&learnProduct=code-security#directories-or-directory--
 
 
-興味深いことに、このdependabot.ymlの記述 `directories: "/modules/**/*"` はGitHub Copilot Reviewから否定されていたものです。調査を難航させた一端でもあるため、そのやりとりを以下に紹介します。
+興味深いことに、この`dependabot.yml`の記述 `directories: "/modules/**/*"` はGitHub Copilot Reviewから否定されていたものです。調査を難航させた一端でもあるため、そのやりとりを以下に紹介します。
 
 ![copilot-review-comment](/images/morihaya-20260109-dependabot-too-level-deep/2026-01-09-00-38-37.png)
 
@@ -149,7 +149,7 @@ https://docs.github.com/en/code-security/dependabot/working-with-dependabot/depe
 ![copilot-apologised](/images/morihaya-20260109-dependabot-too-level-deep/2026-01-09-00-42-30.png)
 
 この時の私は率直に言って「Copilotくんもまだまだだねぇ」と調子に乗っていたと思います。
-しかし意気揚々とこのdependabot.ymlを反映したところブログタイトルでもある `stack level too deep` が発生しました。
+しかし意気揚々とこの`dependabot.yml`を反映したところブログタイトルでもある `stack level too deep` が発生しました。
 
 調べていくとDependency graphの概要画面では `Dependabot encountered an unknown error`とOracle DBで出る `ORA-600` のような具体性のない恐ろしいメッセージを表示しています。
 
@@ -182,11 +182,11 @@ https://docs.github.com/en/code-security/dependabot/working-with-dependabot/depe
 
 この結果を受けて私は `directories` 指定が何らかのバグを持っていると誤解しました。
 
-切り分けのためこのタイミングでリポジトリ自体をForkし、レビューなしで直接dependabot.ymlを更新できるようにしました。長期戦を覚悟した形です。
+切り分けのためこのタイミングでリポジトリ自体をForkし、レビューなしで直接`dependabot.yml`を更新できるようにしました。長期戦を覚悟した形です。
 
 直前のCopilot Coding Reviewによる `directories` についての否定的なレビューコメントもあり、一定個数以上のディレクトリ数やネスト数などを条件に `**/*` だと問題が起きるのだろうと仮説を立てたのです。
 
-そのためdependabot.ymlを以下のような指定にしました。
+そのため`dependabot.yml`を以下のような指定にしました。
 
 ```yml
 # /.github/dependabot.yml
@@ -334,7 +334,7 @@ resource "azurerm_cdn_frontdoor_profile" "main" {
 元: `*   source = "../../../../modules`
 先: `*   source = "../path/to/`
 
-そしてdependabot.ymlは当初やりたかった `directories` で `**/*` を使用しています。
+そして`dependabot.yml`は当初やりたかった `directories` で `**/*` を使用しています。
 
 追加としてHCP Terraform のプライベートレジストリにあるモジュールを扱うために、`registries` でHCP Terraformのレジストリと`TF_API_TOKEN`を設定しています。
 
@@ -364,7 +364,7 @@ updates:
       interval: "weekly"
 ```
 
-このdependabot.ymlをPushし、Forkした切り分け用のリポジトリで、一気に大量のDependabotからのPRが作成された時は喝采をあげました。これによって大規模なTerraformリポジトリでも問題なくDependabotを運用できる準備が整ったと言えるでしょう。
+この`dependabot.yml`をPushし、Forkした切り分け用のリポジトリで、一気に大量のDependabotからのPRが作成された時は喝采をあげました。これによって大規模なTerraformリポジトリでも問題なくDependabotを運用できる準備が整ったと言えるでしょう。
 
 ## おわりに
 
