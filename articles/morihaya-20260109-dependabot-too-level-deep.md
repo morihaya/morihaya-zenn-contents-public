@@ -13,7 +13,7 @@ publication_name: "aeonpeople"
 
 ## はじめに
 
-こんにちは、あけおめことよろです。イオンスマートテクノロジー株式会社（AST）でSREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
+こんにちは、あけましておめでとうございます。イオンスマートテクノロジー株式会社（AST）でSREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
 本記事ではTerraform用の巨大リポジトリにDependabotを導入しようとしたところRubyのSystemStackErrorメッセージ `stack level too deep` エラーが発生し動作しなかった問題の調査の流れと原因特定から解決までを紹介する記事です。
 
