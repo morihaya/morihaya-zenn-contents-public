@@ -5,6 +5,7 @@ type: "tech"
 topics:
   - "Azure"
   - "AzureDevOps"
+  - "azurepipelines"
   - "aeon"
 published: false
 publication_name: "aeonpeople"
