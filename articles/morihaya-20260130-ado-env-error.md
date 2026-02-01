@@ -7,7 +7,7 @@ topics:
   - "AzureDevOps"
   - "azurepipelines"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
@@ -16,9 +16,9 @@ publication_name: "aeonpeople"
 こんにちは。イオンスマートテクノロジー株式会社（AST）SREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
 本記事ではAzure DevOps（以降はADO）Pipelineの実行時に、突然怖いエラーが出て慌てたが結局問題はなかった事象を紹介します。
-デフォルトの権限で発生し得る事象であるため、私たちと同じように慌てずに済む人がでないことを願って記事を書いています。
+デフォルトの権限で発生し得る事象であるため、私たちと同じように慌てる人がでないことを願って記事を書いています。
 
-具体的には以下のエラーが突然表示されるようになりました。実はこのエラーがPipeline実行においては警告でしかなかったというものです。
+具体的には以下のエラーが突然表示されるようになりました。このエラーがPipeline実行においては警告でしかなかったというものです。
 
 > Encountered error(s) while parsing pipeline YAML:Job Run_Execute: Environment <Env Name> could not be found. The environment does not exist or has not been authorized for use.Job Run_Execute: Environment <Env Name> could not be found. The environment does not exist or has not been authorized for use.Job Apply: Environment <Env Name> could not be found. The environment does not exist or has not been authorized for use.
 
