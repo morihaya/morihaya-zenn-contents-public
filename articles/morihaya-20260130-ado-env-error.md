@@ -15,7 +15,7 @@ publication_name: "aeonpeople"
 
 こんにちは。イオンスマートテクノロジー株式会社（AST）SREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
-本記事ではAzure DevOps（以降はADO）Pipelineの実行時に、突然怖いエラーが出て慌てたが結局問題はなかった事象を紹介します。
+本記事ではAzure DevOps（以降はADO）Pipelinesの実行時に、突然怖いエラーが出て慌てたが結局問題はなかった事象を紹介します。
 デフォルトの権限で発生し得る事象であるため、私たちと同じように慌てる人がでないことを願って記事を書いています。
 
 具体的には以下のエラーが突然表示されるようになりました。このエラーがPipeline実行においては警告でしかなかったというものです。
@@ -30,7 +30,7 @@ publication_name: "aeonpeople"
 
 ## 背景
 
-当社ではAzure DevOps（ADO）Pipelineを利用してCI/CDを実現しています。（もちろんGitHubおよびActionsもあります）
+当社ではAzure DevOps（ADO）Pipelinesを利用してCI/CDを実現しています。（もちろんGitHubおよびActionsもあります）
 
 たとえばAzureネイティブで連携が容易なAKSへのManifest反映などをADO Pipelines経由で行っており、プロダクトチームが自律的にリリース作業を行えるよう仕組みを整えています。
 
