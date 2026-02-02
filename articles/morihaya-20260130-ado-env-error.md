@@ -24,23 +24,23 @@ publication_name: "aeonpeople"
 
 ## TL;DR
 
-- ADO Pipelineを用いてCI/CDを行っているが、ある日突然エラーメッセージが表示されるようになった
-- 基本的にリリース作業はADO Pipelineを用いてプロダクトチームにセルフで行ってもらっているが、エラーでびっくりした
+- ADO Pipelinesを用いてCI/CDを行っているが、ある日突然エラーメッセージが表示されるようになった
+- 基本的にリリース作業はADO Pipelinesを用いてプロダクトチームにセルフで行ってもらっているが、エラーでびっくりした
 - Microsoftサポートの協力もあり、あくまでメッセージが出るようになっただけで、権限の仕様に変更は無く、実行には問題なかった
 
 ## 背景
 
 当社ではAzure DevOps（ADO）Pipelineを利用してCI/CDを実現しています。（もちろんGitHubおよびActionsもあります）
 
-たとえばAzureネイティブで連携が容易なAKSへのManifest反映などをADO Pipeline経由で行っており、プロダクトチームが自律的にリリース作業を行えるよう仕組みを整えています。
+たとえばAzureネイティブで連携が容易なAKSへのManifest反映などをADO Pipelines経由で行っており、プロダクトチームが自律的にリリース作業を行えるよう仕組みを整えています。
 
-いくつかのADO Pipelineでは[Environment](https://learn.microsoft.com/ja-jp/azure/devops/pipelines/process/environments)機能を活用しており、デプロイ対象の環境ごとに承認フローやリソースの管理を行っています。
+いくつかのADO Pipelinesでは[Environment](https://learn.microsoft.com/ja-jp/azure/devops/pipelines/process/environments)機能を活用しており、デプロイ対象の環境ごとに承認フローやリソースの管理を行っています。
 
 ## プロダクトチームのリリース時に突然出てきた大量のエラーメッセージ
 
 ある日、プロダクトチームからリリース作業時にエラーが発生しているとの救援要請を受けました。
 
-時をおかず当チームから有志が反応し、リリースのためのオンライン会議室に参加し状況を確認してみると、ADO Pipelineの実行画面に以下のようなエラーメッセージが大量に表示されていました。
+時をおかず当チームから有志が反応し、リリースのためのオンライン会議室に参加し状況を確認してみると、ADO Pipelinesの実行画面に以下のようなエラーメッセージが大量に表示されていました。
 
 > Encountered error(s) while parsing pipeline YAML:Job Run_Execute: Environment <Env Name> could not be found. The environment does not exist or has not been authorized for use.
 
@@ -56,7 +56,7 @@ publication_name: "aeonpeople"
 
 "You build it, You run it."（自分で開発して自分で運用しよう）が提唱されて久しいですが、ASTでも可能な限りプロダクトのリリースはそのプロダクトを開発チームに任せる方針をとっています。
 
-しかし今回のケースではエラーの発生から通常のリリースは難しいと判断し、強権限をもつ当チームがADO Pipelineを実行することでその場はリリース作業を行い、エラーへの対応は後回しとしました。
+しかし今回のケースではエラーの発生から通常のリリースは難しいと判断し、強権限をもつ当チームがADO Pipelinesを実行することでその場はリリース作業を行い、エラーへの対応は後回しとしました。
 
 これは暫定対応で、個人としてはついその場で原因特定のために切り分けや試行錯誤をしたくなりますが、プロダクトチームがリリースを予定通りに進めることが優先されると判断しました。
 
@@ -100,7 +100,7 @@ publication_name: "aeonpeople"
 
 この変更により警告メッセージは消えましたが、「そもそもなぜ急に警告が出るようになったのか」との疑問は残りました。
 
-### 参考：ADO Pipeline EnvironmentsのSecurity種別
+### 参考：ADO Pipelines EnvironmentsのSecurity種別
 
 先に暫定対策としてSecurityの変更について記載しましたが、参考として以下に[ドキュメント](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/permissions?view=azure-devops#set-security-for-environments-in-azure-pipelines)から各ロールについての説明を引用します。
 
@@ -127,7 +127,7 @@ publication_name: "aeonpeople"
 
 問い合わせ内容として以下のポイントを伝えました。
 
-- ある日突然、ADO PipelineでEnvironmentに関するエラーメッセージが表示されるようになった
+- ある日突然、ADO PipelinesでEnvironmentに関するエラーメッセージが表示されるようになった
 - Pipeline自体は正常に動作しており、実行結果には影響がない
 - 権限設定を変更することで警告は消えたが、根本原因を把握したい
 - 今後の対応方針として、どの権限設定がベストプラクティスか知りたい
