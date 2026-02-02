@@ -1,5 +1,5 @@
 ---
-title: "影響なし：Azure DevOps Pipelineが突然Encountered error(s)を出し始めた"
+title: "影響なし：Azure DevOps Pipelinesが突然Encountered error(s)を出し始めた"
 emoji: "🚧"
 type: "tech"
 topics:
@@ -184,7 +184,7 @@ SR起票の翌日に来たMicrosoftサポートからの回答により、事象
 
 ## おわりに
 
-以上が「影響なし：Azure DevOps Pipelineが突然Encountered error(s)を出し始めた」事象の紹介でした。
+以上が「影響なし：Azure DevOps Pipelinesが突然Encountered error(s)を出し始めた」事象の紹介でした。
 
 今回の事象は、結果として影響なしであったものの、プロダクトチームにとっては「いつも通りの作業で急にエラーが出た」不安な体験でした。
 
