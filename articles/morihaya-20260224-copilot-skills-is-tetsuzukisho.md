@@ -28,7 +28,7 @@ publication_name: "aeonpeople"
 
 ## SkillsやCustom instructionsとは
 
-GitHub Copilotを一定以上使い込んでいる方であれば耳にしたことがあるであろう「Skills」について簡単に説明します。
+GitHub Copilotを日常的に利用している方であれば耳にしたことがあるであろう「Skills」について、ここではGitHub Copilotでの位置づけに絞って簡単に説明します。
 
 ### Custom instructions
 
