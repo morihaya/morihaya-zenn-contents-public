@@ -8,7 +8,7 @@ topics:
   - "azure"
   - "azurefrontdoor"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
