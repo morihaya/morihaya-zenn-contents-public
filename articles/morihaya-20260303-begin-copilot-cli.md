@@ -6,7 +6,7 @@ topics:
   - "githubcopilot"
   - "cli"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
