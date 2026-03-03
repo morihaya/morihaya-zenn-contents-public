@@ -186,6 +186,11 @@ copilot --help
 
 @[speakerdeck](46ac98b8c569402ea641e1ba1034835a)
 
+(2026/03/03追記)
+「GitHub Copilot CLI 現状確認会議 2月版」も教えていただきましたので追加します。1月版と併せて読むと大変アップデートできて良いですね！
+
+@[speakerdeck](bbb485ba645e4f45baee402954985cd7)
+
 それではみなさま、Enjoy GitHub Copilot CLI！
 
 ---
