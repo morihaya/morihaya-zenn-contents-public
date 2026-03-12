@@ -182,7 +182,7 @@ https://learn.microsoft.com/en-us/azure/storage-mover/service-prerequisites#perm
 
 初回実行まではセットアップとして行っておき、GitHub Actionsで実行する権限はジョブのリランに必要なものだけに絞るのが良いでしょう。
 
-ただドキュメントはリランに必要なロールは以下とあります。
+ドキュメントはリランに必要なロールは以下とあります。
 
 - Subscription: Reader
 - Resource group: Contributor
