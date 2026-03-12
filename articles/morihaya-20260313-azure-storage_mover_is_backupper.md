@@ -87,7 +87,7 @@ https://learn.microsoft.com/ja-jp/azure/storage/common/storage-use-azcopy-author
 
 https://learn.microsoft.com/en-us/azure/storage-mover/service-overview
 
-Storage Moverは名前のとおり本来は移行サービスです。Microsoft Learnでも、オンプレミスやAWS S3などからAzure Storageへデータを移すためのフルマネージドの移行サービスと説明されています。
+Storage Moverは名前のとおり本来はデータを移行するためのサービスです。Microsoft Learnでも、オンプレミスやAWS S3などからAzure Storageへデータを移すためのフルマネージドの移行サービスと説明されています。
 
 よって「バックアップのためのサービス」ではありません。（念のため明記！！）
 
