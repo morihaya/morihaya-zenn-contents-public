@@ -14,7 +14,7 @@ publication_name: "aeonpeople"
 
 こんにちは。イオンスマートテクノロジー株式会社（AST）でSREチームの林 aka [もりはや](https://twitter.com/morihaya55)です。
 
-本記事ではイオンシネマ [シアタス調布](https://www.aeoncinema.com/cinema/chofu/)で開催したイベント「[シネマ de LT会#2 〜Back to the Screen〜](https://aeon.connpass.com/event/384637/)」についての運営レポートです。
+本記事はイオンシネマ [シアタス調布](https://www.aeoncinema.com/cinema/chofu/)で開催したイベント「[シネマ de LT会#2 〜Back to the Screen〜](https://aeon.connpass.com/event/384637/)」についての運営レポートです。
 
 ![イベントカバー](/images/morihaya-20260325-cinemadelt2/2026-03-24-22-29-28.png)
 
