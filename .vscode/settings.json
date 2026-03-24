@@ -1,4 +1,8 @@
 {
     "pasteImage.insertPattern": "${imageSyntaxPrefix}/images/${currentFileNameWithoutExt}/${imageFileName}${imageSyntaxSuffix}",
-    "pasteImage.path": "${projectRoot}/images/${currentFileNameWithoutExt}"
+    "pasteImage.path": "${projectRoot}/images/${currentFileNameWithoutExt}",
+    "workbench.colorCustomizations": {
+        "statusBar.noFolderBackground": "#936520",
+        "statusBar.noFolderForeground": "#f2fff2"
+    }
 }
