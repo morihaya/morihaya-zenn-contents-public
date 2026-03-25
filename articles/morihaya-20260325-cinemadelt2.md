@@ -6,7 +6,7 @@ topics:
   - "イベントレポート"
   - "イベント登壇"
   - "aeon"
-published: false
+published: true
 publication_name: "aeonpeople"
 ---
 
