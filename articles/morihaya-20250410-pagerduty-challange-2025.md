@@ -11,6 +11,12 @@ topics:
 published: true # false or true , スケジュール公開の場合はfalseで予約して後からtrueにFix必要
 publication_name: "aeonpeople"
 ---
+## (2026-04-16追記) 2026年の第2回へも参加！
+本記事は2025年の第1回のイベントレポートです。
+
+第2回のPagerDuty Challenge Cup 2026にもASTメンバーが参戦しましたので、以下のレポート記事もぜひご覧ください！
+https://zenn.dev/aeonpeople/articles/ac68b50f025f22
+
 
 ## はじめに
 
