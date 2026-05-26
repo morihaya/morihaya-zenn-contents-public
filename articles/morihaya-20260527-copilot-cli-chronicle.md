@@ -5,8 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics:
   - "github"
   - "githubcopilot"
-  - "copilotcli"
-  - "cli"
+  - "githubcopilotcli"
   - "aeon"
 published: true
 published_at: "2026-05-27 08:00"
