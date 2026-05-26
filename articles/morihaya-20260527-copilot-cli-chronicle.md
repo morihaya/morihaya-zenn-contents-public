@@ -3,9 +3,9 @@ title: "GitHub Copilot CLIの/chronicleで課金体系の変更に備えよう"
 emoji: "📜"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics:
+  - "github"
   - "githubcopilot"
   - "copilotcli"
-  - "chronicle"
   - "cli"
   - "aeon"
 published: true
