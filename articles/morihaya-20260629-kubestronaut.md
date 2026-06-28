@@ -96,6 +96,8 @@ https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/
 
 あの時のフラグ、無事に回収できましたのできっかけをありがとうございました！！
 
+そして今年のKubeCon + CloudNativeCon Japan 2026は7/28-30 at YOKOHAMAで開催されます。今から参加が楽しみです。
+
 ## おわりに
 
 以上が「Kubestronautの一員になりました！」でした。
