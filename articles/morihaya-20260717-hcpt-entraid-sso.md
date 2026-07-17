@@ -76,6 +76,10 @@ We noticed that you tried to link your HCP Terraform (HCP Terraform) account to 
 
 https://developer.hashicorp.com/terraform/cloud-docs/users-teams-organizations/single-sign-on/entra-id
 
+なお基本設定の手順はAPC社のブログ「HCP Terraform で Microsoft Entra ID の SSO を設定する手順」 by 埜下さんが画像付きで分かりやすいためオススメです。
+
+https://techblog.ap-com.co.jp/entry/2024/06/07/090000
+
 大まかな流れは以下となります。
 
 1. Entra ID側でエンタープライズアプリケーションを作成し、SAMLベースのSSOを構成する
